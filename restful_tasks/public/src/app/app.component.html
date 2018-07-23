@@ -1,0 +1,8 @@
+<button (click)='getPeopleFromService()'>Get People</button>
+
+<li *ngFor= 'let x of people'>
+  {{ x.name }}
+  <button (click)='getPersonFromService(x._id)'>Show</button>
+</li>
+
+{{person.name}}
